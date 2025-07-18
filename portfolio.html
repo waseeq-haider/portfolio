@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waseeq Haider | Cybersecurity & Web Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f1115;
+      color: #fff;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header.hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at top, #1f1f1f, #0f1115);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header.hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js/assets/particles-js/bg.jpg') no-repeat center/cover;
+      opacity: 0.1;
+      z-index: 0;
+    }
+
+    header.hero h1 {
+      font-size: 3rem;
+      z-index: 1;
+      text-shadow: 0 0 20px #00ffc8;
+    }
+
+    header.hero p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #ccc;
+      z-index: 1;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2.2rem;
+      color: #00ffc8;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    ul li, .project {
+      background-color: rgba(255,255,255,0.04);
+      padding: 15px;
+      margin-bottom: 15px;
+      border-left: 4px solid #00ffc8;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    ul li:hover, .project:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 10px #00ffc8aa;
+    }
+
+    .project a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #00ffc8;
+    }
+
+    .contact a {
+      color: #00ffc8;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #0a0b0d;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #00ffc8;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #0a0b0d;
+      color: #666;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <h1>I'm <span class="typed"></span></h1>
+    <p>Cybersecurity Specialist & Full-Stack Developer</p>
+  </header>
+
+  <section class="about glass" id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>I'm Waseeq Haider, a cybersecurity practitioner and full-stack developer passionate about building secure, modern web applications. I thrive in ethical hacking, backend systems, and automating digital defense strategies. I believe in technology with purpose — both powerful and secure.</p>
+  </section>
+
+  <section class="skills glass" id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python</li>
+      <li>Kali Linux</li>
+      <li>JavaScript / Node.js</li>
+      <li>React / HTML / CSS</li>
+      <li>Burp Suite</li>
+      <li>Metasploit</li>
+      <li>MongoDB</li>
+      <li>Docker</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section class="services glass" id="services" data-aos="fade-up">
+    <h2>Services</h2>
+    <ul>
+      <li>Web Development (Frontend + Backend)</li>
+      <li>Penetration Testing</li>
+      <li>Vulnerability Assessment</li>
+      <li>Custom Tool Creation</li>
+      <li>Security Consulting</li>
+    </ul>
+  </section>
+
+  <section class="projects glass" id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>CyberToolKit</h3>
+      <p>A toolkit for network scanning, port analysis, and basic exploits.</p>
+      <a href="#">GitHub Repo</a>
+    </div>
+    <div class="project">
+      <h3>SecureBlog CMS</h3>
+      <p>A secure blogging platform with login, post editor, and comment moderation.</p>
+      <a href="#">Live Demo</a>
+    </div>
+    <div class="project">
+      <h3>Dark Portfolio Template</h3>
+      <p>Minimal, animated dark-themed portfolio template.</p>
+      <a href="#">GitHub</a>
+    </div>
+  </section>
+
+  <section class="blog glass" id="blog" data-aos="fade-up">
+    <h2>Blog</h2>
+    <ul>
+      <li>How I Hacked My Own Web App</li>
+      <li>Top 5 Cybersecurity Tools in 2025</li>
+      <li>Why Every Developer Should Learn About Threat Modeling</li>
+    </ul>
+  </section>
+
+  <section class="contact glass" id="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <p>Email: waseeq@example.com</p>
+    <p>GitHub: <a href="#">github.com/waseeq</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/waseeq</a></p>
+    <p>Twitter: <a href="#">@waseeqX</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Waseeq Haider. All rights reserved.</p>
+  </footer>
+
+  <script>
+    var typed = new Typed(".typed", {
+      strings: ["Waseeq Haider", "a Cybersecurity Specialist", "a Web Developer"],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true,
+    });
+
+    AOS.init();
+  </script>
+</body>
+</html>
